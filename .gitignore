@@ -1,0 +1,28 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.toc
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+
+# Compiled PDF (regenerated on each build)
+*.pdf
+
+# Word conversion artifacts
+monograph-prepared/
+*.docx
+
+# Backup files
+*.bak

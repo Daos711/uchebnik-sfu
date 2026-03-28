@@ -1,0 +1,48 @@
+% =============================================================
+% main.tex — Главный файл монографии
+% Детерминированные микроструктуры рабочей поверхности
+% подшипников скольжения
+%
+% Оформление: СТУ СФУ (СТУ 7.5-07-2021)
+% =============================================================
+\documentclass[14pt,a4paper,oneside,fleqn]{extbook}
+
+% --- Преамбула (все пакеты и настройки) ---
+\input{preamble}
+
+% =============================================================
+\begin{document}
+
+% --- Титульный лист ---
+\input{chapters/titlepage}
+% titlepage-окружение в oneside сбрасывает счётчик на 1;
+% титульник = стр. 1 (без номера), оборот = стр. 2
+\setcounter{page}{2}
+
+% --- Оборот титула (УДК, ББК, аннотация) ---
+\thispagestyle{empty}
+\input{chapters/annotation}
+
+% --- Содержание ---
+\tableofcontents
+
+% --- Введение ---
+\input{chapters/introduction}
+
+% --- Основная часть ---
+\input{chapters/ch01}
+\input{chapter2/chapter2_main}
+\input{chapter3/chapter3_main}
+\input{chapter4/chapter4_main}
+\input{chapters/ch05}
+\input{chapters/ch06}
+\input{chapters/ch07}
+\input{chapters/ch08}
+
+% --- Заключение ---
+\input{chapters/conclusion}
+
+% --- Список использованных источников ---
+\input{chapters/bibliography}
+
+\end{document}
